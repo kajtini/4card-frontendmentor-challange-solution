@@ -1,0 +1,117 @@
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+  --clr-very-dark-blue: hsl(234, 12%, 34%);
+  --clr-grayish-blue: hsl(229, 6%, 66%);
+  --clr-very-light-gray: hsl(0, 0%, 98%);
+
+  --ff-primary: "Poppins", sans-serif;
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: 15px;
+  text-align: center;
+  background-color: var(--clr-very-light-gray);
+}
+
+header {
+  width: 32rem;
+  margin: 0 auto;
+}
+
+.page__header {
+  font-weight: var(--fw-200);
+  font-size: 2rem;
+  color: var(--clr-very-dark-blue);
+}
+
+.page__header--bold {
+  font-weight: var(--fw-600);
+  color: var(--clr-very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.page__description {
+  color: var(--clr-grayish-blue);
+  font-weight: var(--fw-400);
+  margin-bottom: 4rem;
+  /* max-width: 32rem; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.section__container {
+  background-color: white;
+  border-top: 3px solid;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: left;
+  max-width: 22rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.section__heading {
+  font-size: 1.2rem;
+  color: var(--clr-very-dark-blue);
+  margin-bottom: 0.5rem;
+}
+
+.section__description {
+  color: var(--clr-grayish-blue);
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.section--karma {
+  grid-column: 2/3;
+}
+
+.section--orange {
+  border-color: var(--clr-orange);
+}
+
+.section--calculator {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  transform: translateY(50%);
+}
+
+.section--blue {
+  border-color: var(--clr-blue);
+}
+
+.section--supervisor {
+  transform: translateY(50%);
+}
+
+.section--cyan {
+  border-color: var(--clr-cyan);
+}
+
+.section--red {
+  border-color: var(--clr-red);
+}
+
+.section__img {
+  transform: translateX(78%);
+}
